@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/topRatedMFrag">
+
+
+    <fragment
+        android:id="@+id/topRatedMFrag"
+        android:name="com.example.myapplication.TopRatedMFrag"
+        android:label="fragment_top_rated_m"
+        tools:layout="@layout/fragment_top_rated_m" >
+        <action
+            android:id="@+id/action_topRatedMFrag2_to_popularMFrag3"
+            app:destination="@id/popularMFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularMFrag"
+        android:name="com.example.myapplication.PopularMFrag"
+        android:label="fragment_popular_m"
+        tools:layout="@layout/fragment_popular_m" />
+</navigation>
